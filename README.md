@@ -72,8 +72,10 @@ Unhandled rejection TypeError: Cannot read property '0' of undefined
 
 then this is a known issue. The offending tool is careen, which is what is
 used to run migrations. It seems to have a 30-50% chance of failing when the
-example is run, and
-[I'm still investigating the cause](https://github.com/jmeas/api-pls/issues/16).
+example is run, and I'm still investigating the cause.
 
-If the error is something else, then please
+Most of the time, you should be able to rerun the command a few times to get
+to work. Sorry about this!
+
+If the error persists, or is something else, then please
 [open an issue](https://github.com/jmeas/api-pls/issues/new?title=Error+on+start+up).
