@@ -34,7 +34,7 @@ example files.
 Once you're satisfied with your resource models, run `npm run migrate`. This
 will generate migrations from your models, and then apply them to the database.
 
-You're now ready to start the example.
+You're now ready to start the API webserver.
 
 Run `npm run start` to get it running. Once it's up, navigate your browser to
 `localhost:5000` to begin CRUD'ing.
