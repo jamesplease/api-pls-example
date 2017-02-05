@@ -1,6 +1,6 @@
-# API Pls Example
+# api-pls Example
 
-This project demonstrates how to use [API Pls](https://github.com/jmeas/api-pls)
+This project demonstrates how to use [api-pls](https://github.com/jmeas/api-pls)
 to start up an API webserver in any project.
 
 #### Prerequisites
