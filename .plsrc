@@ -1,3 +1,4 @@
 {
-  "resourcesDirectory": "./resources"
+  "resourcesDirectory": "./resources",
+  "ssl": true
 }
