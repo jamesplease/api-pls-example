@@ -23,9 +23,6 @@ line to the file, replacing the database URL with your own:
 DATABASE_URL='postgres://user@example.com:5432/example'
 ```
 
-**Warning: Each time that you run the example, the database specified will be
-completely wiped.**
-
 Next, you'll need to create resource models. These are the definitions that
 describe what tables and endpoints are created for you.
 
