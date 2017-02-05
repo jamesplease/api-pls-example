@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/jmeas/api-pls-example/issues"
   },
-  "homepage": "https://github.com/jmeas/api-pls-example#readme"
+  "homepage": "https://github.com/jmeas/api-pls-example#readme",
+  "dependencies": {
+    "api-pls": "^0.5.0"
+  }
 }
