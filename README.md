@@ -31,26 +31,30 @@ There are two examples already created for you in the `./resources` directory:
 For now, the documentation for a resource model is contained within those
 example files.
 
-Once you're satisfied with your resource models, run `pls migrate`. This will
-generate migrations from your models, and then apply them to the database.
+Once you're satisfied with your resource models, run `npm run migrate`. This
+will generate migrations from your models, and then apply them to the database.
 
 You're now ready to start the example.
 
-Run `pls start` to get it running. Once it's up, navigate your browser to
+Run `npm run start` to get it running. Once it's up, navigate your browser to
 `localhost:5000` to begin CRUD'ing.
 
 ### FAQ
 
+#### How can I change my resource models after the initial migration?
+
+Eventually, api-pls will allow you to change your resources dynamically. It does
+not support this now, however. If you change your resource models, you'll need
+to clear all of the data in the database by running `npm run reset`.
+
+Once that completes, you can run `npm run migrate` to bootstrap the database
+with your updated models.
+
 #### How can I start a PostgreSQL database to run this example?
 
 To run the example, you'll need a PostgreSQL database URL. It is recommended
-that you create a database specifically for testing this tool.
-
-_Be careful, because on start up the example will wipe the database that you
-use._
-
-This is performed to ensure that there are no conflicts between existing tables
-and newly-added tables when the application bootstraps your database.
+that you create a database specifically for testing purposes, rather than
+using a database that you are using for other uses, too.
 
 My preference is to create a free [Heroku](heroku.com) app, and then set up a
 free version of
@@ -62,20 +66,13 @@ You can also set up a database locally on your machine. This will differ
 slightly between operating systems. I recommend searching
 [StackOverflow](stackoverflow.com) for the best solution for your OS.
 
-#### Why did I get an error when I ran the example?
+#### My database does not use SSL; how can I connect to it?
 
-If the stack trace starts with:
+You can set the "ssl" option to be `false` in your `.plsrc` file.
 
+```json
+{
+  "resourcesDirectory": "./resources",
+  "ssl": false
+}
 ```
-Unhandled rejection TypeError: Cannot read property '0' of undefined
-```
-
-then this is a known issue. The offending tool is careen, which is what is
-used to run migrations. It seems to have a 30-50% chance of failing when the
-example is run, and I'm still investigating the cause.
-
-Most of the time, you should be able to rerun the command a few times to get
-to work. Sorry about this!
-
-If the error persists, or is something else, then please
-[open an issue](https://github.com/jmeas/api-pls/issues/new?title=Error+on+start+up).

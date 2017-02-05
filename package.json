@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "description": "An example project that utilizes API Pls",
   "main": "index.js",
+  "scripts": {
+    "reset": "pls reset-database",
+    "migrate": "pls migrate",
+    "start": "pls start"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/jmeas/api-pls-example.git"
@@ -21,6 +26,6 @@
   },
   "homepage": "https://github.com/jmeas/api-pls-example#readme",
   "dependencies": {
-    "api-pls": "^0.5.0"
+    "api-pls": "0.6.0"
   }
 }
