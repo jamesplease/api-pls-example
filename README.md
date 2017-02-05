@@ -29,10 +29,10 @@ completely wiped.**
 Next, you'll need to create resource models. These are the definitions that
 describe what tables and endpoints are created for you.
 
-There are two examples already created for you in the `/examples/resources`
-directory: `transaction` and `category`. Review those, and make changes as
-you see fit. For now, the documentation for a resource model is contained
-within those example files.
+There are two examples already created for you in the `./resources` directory:
+`transaction` and `category`. Review those, and make changes as you see fit.
+For now, the documentation for a resource model is contained within those
+example files.
 
 Once you're satisfied with your resource models, run `pls migrate`. This will
 generate migrations from your models, and then apply them to the database.
