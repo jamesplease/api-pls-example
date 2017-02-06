@@ -1,0 +1,6 @@
+name: 'person'
+plural_form: 'people'
+
+attributes:
+  first_name: 'VARCHAR(30)'
+  last_name: 'VARCHAR(30)'
