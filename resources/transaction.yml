@@ -9,6 +9,9 @@ actions:
   update: true
   delete: false
 
+# This is short-hand to disable pagination for this resource.
+pagination: false
+
 # attributes are the "data" associated with this resource. Eventually,
 # this could be an ORM layer for different databases, but for now it's
 # a pretty straightforward mapping to Postgres.
