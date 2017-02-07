@@ -1,6 +1,14 @@
 # this is the name of the resource. It also acts as the database table.
 name: 'transaction'
 
+# You can specify which CRUD actions are permitted on this resource
+actions:
+  create: true
+  readOne: false
+  readMany: true
+  update: true
+  delete: false
+
 # attributes are the "data" associated with this resource. Eventually,
 # this could be an ORM layer for different databases, but for now it's
 # a pretty straightforward mapping to Postgres.
