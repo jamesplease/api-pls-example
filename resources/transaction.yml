@@ -4,8 +4,8 @@ name: 'transaction'
 # You can specify which CRUD actions are permitted on this resource
 actions:
   create: true
-  readOne: false
-  readMany: true
+  read_one: false
+  read_many: true
   update: true
   delete: false
 
