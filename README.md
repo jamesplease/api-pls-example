@@ -23,15 +23,14 @@ line to the file, replacing the database URL with your own:
 DATABASE_URL='postgres://user@example.com:5432/example'
 ```
 
-Next, you'll need to create resource models. These are the definitions that
-describe what tables and endpoints are created for you.
+Next, you'll need to create [Resource Models](https://github.com/jmeas/api-pls/wiki/Resource-Model).
+These are the definitions that describe what tables and endpoints are created
+for you.
 
-There are two examples already created for you in the `./resources` directory:
-`transaction` and `category`. Review those, and make changes as you see fit.
-For now, the documentation for a resource model is contained within those
-example files.
+There are several examples already created for you in the `./resources` directory:
+Review those, and make changes as you see fit.
 
-Once you're satisfied with your resource models, run `npm run migrate`. This
+Once you're satisfied with your resource models, run `npm run sync`. This
 will generate migrations from your models, and then apply them to the database.
 
 You're now ready to start the API webserver.
@@ -47,7 +46,7 @@ Eventually, api-pls will allow you to change your resources dynamically. It does
 not support this now, however. If you change your resource models, you'll need
 to clear all of the data in the database by running `npm run reset`.
 
-Once that completes, you can run `npm run migrate` to bootstrap the database
+Once that completes, you can run `npm run sync` to bootstrap the database
 with your updated models.
 
 #### How can I start a PostgreSQL database to run this example?
