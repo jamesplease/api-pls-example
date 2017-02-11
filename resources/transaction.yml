@@ -1,6 +1,17 @@
 # this is the name of the resource. It also acts as the database table.
 name: 'transaction'
 
+# You can specify which CRUD actions are permitted on this resource
+actions:
+  create: true
+  read_one: false
+  read_many: true
+  update: true
+  delete: false
+
+# This is short-hand to disable pagination for this resource.
+pagination: false
+
 # attributes are the "data" associated with this resource. Eventually,
 # this could be an ORM layer for different databases, but for now it's
 # a pretty straightforward mapping to Postgres.
@@ -11,9 +22,12 @@ attributes:
     nullable: false
   date: 'DATE'
 
-# these "built-in" attributes are included for every resource, unless you
+meta:
+  copyright: 'VARCHAR(30)'
+
+# these "built-in" meta attributes are included for every resource, unless you
 # pass false.
-built_in_attributes:
+built_in_meta_attributes:
   # this is only here for documentation purposes. It is the default.
   created_at: true
-  updated_at: false
+  updated_at: true

@@ -1,0 +1,16 @@
+name: 'person'
+plural_form: 'people'
+
+attributes:
+  first_name: 'VARCHAR(30)'
+  last_name: 'VARCHAR(30)'
+
+# We can adjust some pagination settings in here
+pagination:
+  default_page_size: 5
+  default_page_number: 0
+
+built_in_meta_attributes:
+  # this is only here for documentation purposes. It is the default.
+  created_at: false
+  updated_at: true
