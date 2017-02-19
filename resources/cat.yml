@@ -1,9 +1,9 @@
 name: 'cat'
 
-relations:
+relationships:
   owner:
     resource: 'person'
-    relationship: 'many-to-one'
+    cardinality: 'many-to-one'
 
 attributes:
   name: 'VARCHAR(30)'

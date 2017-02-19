@@ -1,8 +1,8 @@
 {
   "name": "api-pls-example",
   "private": true,
-  "version": "0.1.0",
-  "description": "An example project that utilizes API Pls",
+  "version": "0.2.0",
+  "description": "An example project that utilizes api-pls",
   "main": "index.js",
   "scripts": {
     "reset": "pls reset-database",
@@ -17,8 +17,14 @@
     "api-pls",
     "api",
     "json",
+    "json api",
     "example",
-    "boilerplate"
+    "boilerplate",
+    "postgres",
+    "heroku",
+    "resource",
+    "rails",
+    "django"
   ],
   "author": "Jmeas",
   "license": "MIT",
@@ -27,6 +33,6 @@
   },
   "homepage": "https://github.com/jmeas/api-pls-example#readme",
   "dependencies": {
-    "api-pls": "0.9.0"
+    "api-pls": "0.13.0"
   }
 }

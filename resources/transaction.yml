@@ -27,7 +27,7 @@ meta:
 
 # these "built-in" meta attributes are included for every resource, unless you
 # pass false.
-built_in_meta_attributes:
+built_in_meta:
   # this is only here for documentation purposes. It is the default.
   created_at: true
   updated_at: true
