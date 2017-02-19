@@ -2,7 +2,7 @@
   "name": "api-pls-example",
   "private": true,
   "version": "0.1.0",
-  "description": "An example project that utilizes API Pls",
+  "description": "An example project that utilizes api-pls",
   "main": "index.js",
   "scripts": {
     "reset": "pls reset-database",
@@ -17,8 +17,14 @@
     "api-pls",
     "api",
     "json",
+    "json api",
     "example",
-    "boilerplate"
+    "boilerplate",
+    "postgres",
+    "heroku",
+    "resource",
+    "rails",
+    "django"
   ],
   "author": "Jmeas",
   "license": "MIT",
