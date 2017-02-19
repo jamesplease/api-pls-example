@@ -27,6 +27,6 @@
   },
   "homepage": "https://github.com/jmeas/api-pls-example#readme",
   "dependencies": {
-    "api-pls": "0.9.0"
+    "api-pls": "0.13.0"
   }
 }
